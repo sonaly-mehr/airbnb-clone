@@ -3,6 +3,7 @@ import { unstable_noStore } from "next/cache";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { ListingCard } from '../components/ListingCard';
 import { NoItems } from '../components/NoItems';
+import { redirect } from 'next/navigation';
 
 async function getData(userId) {
     unstable_noStore();
