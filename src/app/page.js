@@ -6,10 +6,10 @@ import { NoItems } from "./components/NoItems";
 import { Suspense } from "react";
 import { SkeltonCard } from "./components/SkeletonCard";
 import { ListingCard } from "./components/ListingCard";
-import { unstable_cache } from "next/cache";
+import { unstable_noStore } from "next/cache";
 
 async function getData({ searchParams, userId }) {
-  unstable_cache();
+  unstable_noStore();
   const data = await prisma.home.findMany({
     where: {
       addedCategory: true,
