@@ -35,7 +35,7 @@ export default async function FavoriteRoute() {
   const data = await getData(user.id);
     return (
         <section className="container mx-atuo px-5 lg:px-10 mt-10">
-        <h2 className="text-3xl font-semibold tracking-tight">Your Favorites</h2>
+        <h2 className="text-xl lg:text-3xl font-semibold tracking-tight">Your Favorites</h2>
   
         {data.length === 0 ? (
           <NoItems

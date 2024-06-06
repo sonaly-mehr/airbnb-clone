@@ -26,7 +26,9 @@ const Navbar = () => {
           />
         </Link>
 
+        {/* <div className="hidden lg:block"> */}
         <SearchModalCompnent />
+        {/* </div> */}
 
         <UserNav />
       </div>

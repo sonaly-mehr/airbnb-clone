@@ -17,8 +17,8 @@ const page = ({params}) => {
       });
     return (
         <>
-      <div className="w-3/5 mx-auto">
-        <h2 className="text-3xl font-semibold tracking-tight transition-colors mb-10">
+      <div className="px-5 lg:px-0 lg:w-3/5 mx-auto">
+        <h2 className="text-xl lg:text-3xl font-semibold tracking-tight transition-colors mb-10">
           Where is your Home located?
         </h2>
       </div>
@@ -26,7 +26,7 @@ const page = ({params}) => {
       <form action={createLocation}>
       <input type="hidden" name="homeId" value={params.id} />
       <input type="hidden" name="countryValue" value={locationValue} />
-      <div className="w-3/5 mx-auto mb-36">
+      <div className="px-5 lg:px-0 lg:w-3/5 mx-auto mb-36">
           <div className="mb-5">
             <Select required onValueChange={(value) => setLocationValue(value)}>
               <SelectTrigger className="w-full">

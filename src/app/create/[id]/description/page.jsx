@@ -9,8 +9,8 @@ import { Textarea } from "@/components/ui/textarea";
 const page = ({ params }) => {
   return (
     <>
-      <div className="w-3/5 mx-auto">
-        <h2 className="text-3xl font-semibold tracking-tight transition-colors">
+      <div className="px-5 lg:px-0 lg:w-3/5 mx-auto">
+        <h2 className="text-xl lg:text-3xl font-semibold tracking-tight transition-colors">
           Please describe your home as good as you can!
         </h2>
       </div>
@@ -18,7 +18,7 @@ const page = ({ params }) => {
       <form action={createDescription}>
         <input type="hidden" name="homeId" value={params.id} />
 
-        <div className="mx-auto w-3/5 mt-10 flex flex-col gap-y-5 mb-36">
+        <div className="mx-auto px-5 lg:px-0 lg:w-3/5 mt-10 flex flex-col gap-y-5 mb-36">
           <div className="flex flex-col gap-y-2">
             <Label>Title</Label>
             <Input

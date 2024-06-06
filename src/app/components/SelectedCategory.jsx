@@ -8,7 +8,7 @@ const SelectedCategory = () => {
   const [selectedCategory, setSelectredCategory] = useState("");
 
   return (
-    <div className="grid grid-cols-4 gap-8 mt-10 w-3/5 mx-auto mb-36">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10 lg:w-3/5 mx-auto mb-36">
       <input type="hidden" name="categoryName" value={selectedCategory} />
 
       {categoryItems.map((item) => (
